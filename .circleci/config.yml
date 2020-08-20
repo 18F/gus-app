@@ -14,6 +14,9 @@ jobs:
       - run:
           command: echo "this is not a test"
           name: Test
+      - run:
+          command: echo "this is another notatest"
+          name: Second
 
 workflows:
   main:
