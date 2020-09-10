@@ -16,7 +16,9 @@ jobs:
           name: Test
   deploy:
     steps:
-      - echo "deploy?"
+      - run:
+          command: echo "deploy?"
+          name: Placeholder
 
 workflows:
   main:
