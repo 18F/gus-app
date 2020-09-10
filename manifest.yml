@@ -1,6 +1,6 @@
 ---
 applications:
-- name: test-python-flask
+- name: gus-app
   random-route: true
   buildpacks:
     - python_buildpack

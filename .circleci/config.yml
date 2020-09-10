@@ -14,11 +14,14 @@ jobs:
       - run:
           command: echo "this is not a test"
           name: Test
-      - run:
-          command: echo "this is another notatest"
-          name: Second
+  deploy:
+    steps:
+      - echo "deploy?"
 
 workflows:
   main:
     jobs:
       - build-and-test
+      - deploy:
+          requires:
+            - build-and-test
