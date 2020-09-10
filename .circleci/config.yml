@@ -15,6 +15,7 @@ jobs:
           command: echo "this is not a test"
           name: Test
   deploy:
+    executor: python/default
     steps:
       - run:
           command: echo "deploy?"
